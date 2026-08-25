@@ -1,0 +1,47 @@
+/* Sevice Page Section */
+    .services .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .services .boxes .box{
+        margin: 20px 0;
+        width: calc(100% / 3 - 20px);
+        text-align: center;
+        border-radius: 12px;
+        padding: 30px 10px;
+        box-shadow: 0 5px 10px #000000(0,0,0,0,12);
+        cursor: default;
+        color: #f1f1f1;
+        transition: all 0.4s ease;
+    }
+/* Icon Services Section */
+    .services .boxes .box:hover{
+        background: #b74b4b;
+        color:#f1f1f1;
+    }
+    .services .boxes .box .icon{
+        height: 50px;
+        width: 50px;
+        background: #b74b4b;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 18px;
+        display: block;
+        margin: 0 auto 15px auto;
+        transition: all 0.4s ease;
+    }
+    .boxes .box:hover .icon{
+        background-color: #f1f1f1;
+        color:#b74b4b;
+    }
+    .services .boxes .box:hover .topic,
+    .services .boxes .box:hover p{
+        color: #f1f1f1;
+        transition: all 0.4s ease;
+    }
+    .services .boxes .box:hover .topic,
+    .services .boxes .box:hover p{
+        color: #f1f1f1;
+    }

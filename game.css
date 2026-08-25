@@ -1,0 +1,120 @@
+/* About Section Stylish */
+    section .content{
+        width: 80%;
+        margin: 0px auto;
+        font-family:'Poppins', sans-serif;
+    }
+    .game .game-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section .title{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+    section .title span{
+        color:#f1f1f1;
+        font-size: 30px;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 8px;
+    }
+    section .title span::before,
+    section .title span::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #b74b4b;
+        left: 0;
+        bottom: 0;
+    }
+    section .title span::after{
+        bottom: -7px;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .game .game-details .left{
+        width: 45%;
+    }
+    .game .left img{
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    .game-details .right{
+        width: 55%;
+    }
+    section .topic{
+        color:#f1f1f1;
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .game-details .right p{
+        text-align: justify;
+        color: #f1f1f1;
+    }
+/* Button Download CV Section */
+    section .button{
+        margin: 16px 0;
+    }
+    section .button button{
+        outline: none;
+        padding: 8px 16px;
+        padding-bottom: 45px;
+        border-radius: 4px;
+        font-size: 25px;
+        font-weight: 400;
+        background: #b74b4b;
+        color:#f1f1f1;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    section .button button:hover{
+        border-color: #b74b4b;
+        background-color: #f1f1f1;
+        color:#b74b4b;
+    }
+/* Button Let's Chat End */
+    @media (max-width: 1000px){
+        .game .game-details{
+            justify-content: center;
+            flex-direction: column;
+        }
+        .game .game-details .left{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .game-details .right{
+            width: 90%;
+            margin: 40px 0;
+        }
+        .services .boxes .box{
+            margin: 20px 0;
+            width: calc(100% / 2 - 20px);
+        }
+    }
+
+        @media (max-width: 900px){
+        .game .left img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+
+
+
+
+
+
+
+
+

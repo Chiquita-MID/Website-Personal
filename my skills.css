@@ -1,0 +1,112 @@
+/* My Skills Section */
+    .skills{
+        background: black;
+    }
+    .skills .content{
+        padding: 40px 0;
+    }
+    .skills .skills-details{ /* Caption My Skills */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .skills-details .text{
+        width: 50%;
+        margin: 10px 0;
+    }
+    .skills-details p{
+        color:#f1f1f1;
+        text-align: justify;
+    }
+    .skills .skills-details .experience{
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+    }
+    .skills-details .experience .num{
+        color: #f1f1f1;
+        font-size: 80px;
+    }
+    .skills-details .experience .exp{
+        color: #f1f1f1;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 500px;
+        margin: 0 6px;
+    }
+/* Skill Stats Section */
+    .skills-details .boxes{ /* Box Stats Position Section */
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skills-details .box{   /* Box Stats Inside Section */
+        width: calc(100% / 2 - 20px);
+        margin: 20px 0;
+    }
+    .skills-details .boxes .topic{
+        font-size: 20px;
+        color: #b74b4b;
+    }
+    .skills-details .boxes .per{
+        font-size: 60px;
+        color: #b74b4b;
+        font-weight: 800;
+    }
+    .skills-details .box:hover{
+    animation: animate 1.5s ease-in-out;
+}
+    @keyframes animate {
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale: 1.05;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+    @media (max-width: 900px) {
+    .skills .skills-details {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+
+    /* 2. Centering and Wrapping the Text Block */
+    .skills-details .text {
+        text-align: center; 
+        max-width: 90%;
+        margin: 0 90px 50px 50px;
+        width: auto; 
+    }
+
+    /* 3. Centering the '10 Years' Experience Block */
+    .skills-details .text .experience {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 20px auto;
+    }
+
+    /* 4. Centering the Skills Boxes Grid */
+    .skills-details .boxes {
+        /* Set a mobile-friendly width for the grid */
+        width: 80%; 
+        max-width: 400px;
+        margin: -90px 0 0 40px;
+
+    }
+    .skills .title {
+        text-align: center;
+    }
+
+    
+
+}

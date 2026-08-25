@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Project Sekai</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about me.css">
+        <link rel="stylesheet" href="my skills.css">
+        <link rel="stylesheet" href="my services.css">
+        <link rel="stylesheet" href="contact me.css">
+        <link rel="stylesheet" href="game.css">
+        <link rel="stylesheet" href="typesetter.css">
+        <link rel="stylesheet" href="slider.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!---navigation menu-->
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <span>Gizel</span>
+                </div>
+                <!---Button Navbar-->
+                <div class="links">
+                    <div class="link"><a href="#home">Home</a></div>
+                    <div class="link"><a href="#about">About</a></div>
+                    <div class="link"><a href="#skills">Skills</a></div>
+                    <div class="link"><a href="#services">Services</a></div>
+                    <div class="link"><a href="#contact">Contact</a></div>
+                    <div class="link"><a href="#game">Game</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <!---Profile Picture--->
+        <section class="home" id="home">
+            <div class="main-container">
+                <div class="image">
+                    <img src="image/picture.png" alt="">
+                </div>    
+            <!---Profile Picture End-->   
+                <div class="content">
+                    <!---Description Profile-->
+                    <h1 data-aos="fade-left">
+                        Hey I'm
+                        <span>Gizel</span>
+                    </h1>
+                    <div class="typewritter">
+                        I'm a
+                        <span class="auto-type">Typesetter</span>
+                    </div>
+                
+
+                    
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+                    <script>
+                        var typed = new Typed(".auto-type",{
+                            strings : [ "Typesetter", "Clipper"],
+                            typeSpeed : 150,
+                            backSpeed : 150,
+                            loop : true
+                        });
+                    </script>
+                    <!---Description Profile End-->
+                    <p>I am interested in technology, creative projects, and systems thinking, with experience exploring visual novel development, manga typesetting, and digital content creation. I enjoy learning new skills, solving problems analytically, and building meaningful ideas that combine creativity with logic and long-term thinking.
+</p>
+                    <!---Button Social Media Section-->
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://web.facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://x.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    <!---Button Hire Me Section-->
+                    <div class="btn">
+                        <a href="https://wa.me/message/X3RMOIFYFX7HF1" target="_blank">
+                            <button type="button">Hire me</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!--About Section Start-->
+
+<section class="about" id="about">
+    <div class="content">
+        <div class="title"><span>About Me</span></div>
+<!--Profile About Me Section-->
+        <div class="about-details">
+            <div class="left">
+                <img src="image/picture.png" alt=""/>
+            </div>
+<!-- Caption About-->
+            <div class="right">
+                <div class="topic"> The Small Projects Creator</div>
+                <p>A creator who enjoys building small games and typesetting manga. I love experimenting with new ideas, even if they start small.</p>
+<!--CV Button Section-->
+                    <div class="button">
+                    <a href="https://web.facebook.com/hanzet.tzy" target="_blank">
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--My Skill Section Start-->
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic">
+                    Skills Reflect Our Knowledge
+                </div>
+                <p data-aos="fade-right">I Used Photoshop for mangga typesetting and light image cleanup, i also used Renpy for my first visual novel concept</p>
+                <div class="experience">
+                    <div class="num">2</div>
+                    <div class="exp">Years Of <br/> experience
+                    </div>
+                </div>
+            </div>
+
+<!--Box My Skills Section-->
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">Photoshop</div>
+                    <div class="per">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Renpy</div>
+                    <div class="per">75%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Capcut</div>
+                    <div class="per">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">PHP</div>
+                    <div class="per">80%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Game Section Start-->
+
+<section class="game" id="game">
+    <div class="content">
+        <div class="title"><span>My Birthday</span></div>
+<!--Profile About Me Section-->
+        <div class="game-details">
+            <div class="left">
+                <img src="image/picture.png" alt=""/>
+            </div>
+<!-- Caption About-->
+            <div class="right">
+                <div class="topic"> My Birthday</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<!--CV Button Section-->
+                    <div class="button">
+                    <a href="https://www.mediafire.com/file/n585kzuy6wz4v8m/com.mybirthday-1.0-1732575306-release.apk/file" target="_blank">
+                        <button>Download</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project Section Start -->
+       <section class="project" id="project">
+         <div class="content">
+           <div class="title"><span>Typesetting</span></div>
+           <!-- Preview Project Section -->
+           <section class="slider-container">
+             <div class="slider-images">
+                <div class="slider-img">
+                 <img src="image/blue two.png" alt="1" />
+                 <h11>Before</h11>
+                 <div class="details">
+                   <p>Manga Blue Archieve</p>
+                 </div>
+               </div>
+               <div class="slider-img">
+                 <img src="image/blue one.png" alt="1" />
+                 <h11>Cover</h11>
+                 <div class="details">
+                   <p>Manga Blue Archieve</p>
+                 </div>
+               </div>
+               <div class="slider-img">
+                 <img src="image/blue three.png" alt="2" />
+                 <h11>After</h11>
+                 <div class="details">
+                   <p>Manga Blue Archieve</p>
+                 </div>
+               </div>
+             </div>
+             <!-- Caption About (moved inside .slider-container) -->
+             <div class="hight">
+               <div class="pitoc">Typesetting Blue Archieve Anthology Manga</div>
+               <p>A creator who enjoys building small experimental games and working with manga typesetting, I love exploring ideas even when they start simple. In typesetting, I handle full cleanup — removing the original Japanese text from speech balloons and SFX, restoring the artwork, and re-typesetting the dialogue in another language with proper fonts, spacing, and flow to keep everything looking natural and true to the story.</p>
+               <!-- CV Button Section -->
+               <div class="download-button">
+                 <a href="Manga Blue Archive Chapter 1.pdf" target="_blank">
+                   <button>Download PDF</button>
+                 </a>
+               </div>
+             </div>
+           </section>
+         </div>
+       </section>
+       
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+       <script>
+         jQuery(document).ready(function ($) {
+           $(".slider-img").on("click", function () {
+             $(".slider-img").removeClass("active");
+             $(this).addClass("active");
+           });
+         });
+       </script>
+     </body>
+   </html>
+
+<!--My Services Section Start-->
+<section class="services" id="services">
+    <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-brands fa-playstation"></i>
+                </div>
+                <div class="topic">Visual Novel Development</div>
+                <p>Lorem Ipsum dolor sit amet consectetus adipista</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="topic">Manga Typesetting</div>
+                <p>Lorem Ipsum dolot sit amet contolodon</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-clapperboard"></i>
+                </div>
+                <div class="topic">Youtube Clipping</div>
+                <p>Lorem Ipsum dolot sit amet contolodon</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <div class="topic">Language Learning</div>
+                <p>Lorem Ipsum dolot sit amet contolodon</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <div class="topic">Photography</div>
+                <p>Lorem Ipsum dolot sit amet contolodon</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                </div>
+                <div class="topic">Online Project Idea</div>
+                <p>Lorem Ipsum dolot sit amet contolodon</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!---Contact Me Section Start-->
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title">
+            <span>Contact Me</span>
+        </div>
+        <div class="text">
+            <div class="topic">Have Any Project?</div>
+            <p>Lorem ipsum dolor sit amet, acontolodon</p>
+            <div class="button">
+                <a href="https://wa.me/message/X3RMOIFYFX7HF1" target="_blank">
+                <button>Let's Chat</button>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+
+
+
+
+
+
+
+
+

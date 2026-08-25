@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    overflow-x: hidden;
+}
+.slider-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Slider Picture */
+.slider-images{
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+
+}
+/* End */
+.slider-images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.slider-img{
+  width: 110px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: width 0.7s ease, height 0.7s ease;
+}
+.slider-img h11{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-shadow: 0 0 5px #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 2;
+  transform: rotate(270deg);
+  
+}
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+  height: 400px;
+}
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+  height: 500px;
+}
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+  height: 400px;
+}
+h11{
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
+}
+.details{
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+}
+.details h22{
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 44px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+.details p{
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 33px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+.slider-img.active{
+  width: 400px !important;
+  height: 500px !important;
+}
+.slider-img.active h11{
+   display: none;
+}
+.slider-img.active .details p, .slider-img.active .details h22{
+  display: block;
+}
+/* About Section Stylish */
+    section .content{
+        width: 80%;
+        margin: 0px auto;
+        font-family:'Poppins', sans-serif;
+    }
+    .project .project-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section .title{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+    section .title span{
+        color:#f1f1f1;
+        font-size: 30px;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 8px;
+    }
+    section .title span::before,
+    section .title span::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #b74b4b;
+        left: 0;
+        bottom: 0;
+    }
+    section .title span::after{
+        bottom: -7px;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .project .project-details .left{
+        width: 45%;
+    }
+    .project .left img{
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    .project-details .right{
+        width: 55%;
+    }
+  /* Title Description Section */
+    section .pitoc{
+        color:#f1f1f1;
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+/* Description Section */
+    .slider-container .hight p{
+        text-align: left;
+        color: #ffffff;
+        padding-left: 50px;
+        justify-content: center;
+        text-align: justify;
+/*Button Position Section */
+        margin-bottom: 10px;
+        margin-top: 50spx;
+    }
+/* Button Download CV Section */
+    section .download-button{
+        margin: 10px 45px;
+        margin-bottom: 120px;
+    }
+    section .download-button button{
+        outline: none;
+        padding: 8px 50px 5px 50px;
+        padding-bottom: 45px;
+        min-width: 300px;
+        border-radius: 4px;
+        font-size: 25px;
+        font-weight: 400;
+        background: #b74b4b;
+        color:#f1f1f1;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    section .download-button button:hover{
+        border-color: #b74b4b;
+        background-color: #f1f1f1;
+        color:#b74b4b;
+    }
+/* Button Let's Chat End */
+  @media (max-width: 1000px){
+        .project .slider-container{
+            flex-direction: column; /* Stack items vertically */
+            height: auto; /* Allow height to adjust */
+            padding: 10px;
+        }
+        .slider-images{
+            gap: 10px; /* Further reduce gap */
+            margin-bottom: 30px;
+            flex-wrap: wrap; /* Ensure wrapping */
+        }
+        .slider-img{ /* Image Normal Size */
+            width: 100px; /* Smaller default width */
+            height: 450px; /* Smaller default height */
+        }
+        .slider-images .slider-img:first-child, .slider-images .slider-img:last-child,
+        .slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+            height: 400px; /* Uniform height for smaller screens */ /*Image Normal Size */
+        }
+        .slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){ /* Image Slider In Middle */
+            height: 450px;
+        }
+        .slider-img.active{ /*Image Active Slider */
+            width: 280px !important; /* Smaller active width */
+            height: 450px !important; /* Smaller active height */
+        }
+        h11{
+            font-size: 20px; /* Further reduced font size */
+            left: -15%; /* Adjusted left position */
+        }
+        .details h22{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .details .pitoc{
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .slider-container .pitoc{ /*Description Section */
+            padding-bottom: 50px; /* Adjusted padding */
+            margin-top: 50px; /* Adjusted margin */
+            width: 100%; /* Full width */
+            margin: 0; /* Remove fixed margins */
+            text-align: justify; /* Center text */
+            padding: 0 10px; /* Adjusted padding */
+        }
+        .slider-container .hight p{
+          margin-right: 10px;
+          margin-left: -40px;
+        }
+        section .download-button{
+          margin-left: 5px;
+        }
+        .services .boxes .box{ /*Service Boxes Section */
+            margin: 15px 0;
+            width: calc(100% / 2 - 10px); /* Adjust width for 2 columns */
+        }
+
+        @media (max-width: 900px){
+        .project .left img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+
+
+
+
+
+
+
+
+
